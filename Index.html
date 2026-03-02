@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assam Online Bazar</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f1f3f6;
+}
+
+/* TOP BAR */
+.topbar{
+  background:linear-gradient(45deg,#ff4b8b,#ff7a18);
+  padding:10px;
+  color:white;
+}
+
+.location{
+  background:white;
+  padding:6px;
+  border-radius:6px;
+  color:black;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.search{
+  display:flex;
+  background:white;
+  border-radius:8px;
+  padding:6px;
+}
+.search input{
+  border:none;
+  flex:1;
+  outline:none;
+}
+
+/* CATEGORY SCROLL */
+.categories{
+  display:flex;
+  overflow-x:auto;
+  gap:10px;
+  padding:10px;
+  background:white;
+}
+.categories div{
+  min-width:80px;
+  text-align:center;
+  font-size:12px;
+}
+
+/* BANNER */
+.banner{
+  margin:10px;
+  border-radius:12px;
+  overflow:hidden;
+}
+.banner img{
+  width:100%;
+}
+
+/* PRODUCT GRID */
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  padding:10px;
+}
+.card{
+  background:white;
+  padding:8px;
+  border-radius:10px;
+  text-align:center;
+}
+.card img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+}
+.card button{
+  width:100%;
+  padding:6px;
+  background:#2874f0;
+  color:white;
+  border:none;
+  border-radius:6px;
+  margin-top:5px;
+}
+
+/* BOTTOM NAV */
+.bottom-nav{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:white;
+  display:flex;
+  justify-content:space-around;
+  padding:8px 0;
+  border-top:1px solid #ccc;
+}
+.bottom-nav div{
+  text-align:center;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP SECTION -->
+<div class="topbar">
+  <div class="location">
+    📍 Rajgarh, Sonari, Assam
+  </div>
+  <div class="search">
+    🔍 <input type="text" placeholder="Search products...">
+  </div>
+</div>
+
+<!-- CATEGORY ICONS -->
+<div class="categories">
+  <div>👕<br>Fashion</div>
+  <div>📱<br>Mobiles</div>
+  <div>💄<br>Beauty</div>
+  <div>💻<br>Electronics</div>
+  <div>🛒<br>Grocery</div>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <img src="https://via.placeholder.com/600x250">
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4>Mobile Phone</h4>
+    <p>₹9999</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4>T-Shirt</h4>
+    <p>₹499</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4>Shoes</h4>
+    <p>₹1499</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4>Watch</h4>
+    <p>₹2499</p>
+    <button>Buy Now</button>
+  </div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <div>🏠<br>Home</div>
+  <div>📂<br>Categories</div>
+  <div>🛒<br>Cart</div>
+  <div>👤<br>Account</div>
+</div>
+
+</body>
+</html>
